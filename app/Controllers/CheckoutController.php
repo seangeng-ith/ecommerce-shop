@@ -1,12 +1,11 @@
 <?php
-
 namespace App\Controllers;
 
 use App\Core\Controller;
 
-class ContactController extends Controller {
-
+class CheckoutController extends Controller {
+    
     public function index() {
-        $this->view('contact');
+        $this->view('checkout');
     }
 }

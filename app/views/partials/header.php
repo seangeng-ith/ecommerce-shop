@@ -18,6 +18,11 @@ $appName = htmlspecialchars($conf['app_name'] ?? 'Eshop', ENT_QUOTES, 'UTF-8');
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?= $appName ?></title>
   <link rel="stylesheet" href="<?= base_url('css/styles.css') ?>">
+  <link rel="stylesheet" href="<?= base_url('css/login.css') ?>">
+  <link rel="stylesheet" href="<?= base_url('css/register.css') ?>">
+  <link rel="stylesheet" href="<?= base_url('css/account.css') ?>">
+  <link rel="stylesheet" href="<?= base_url('css/checkout.css') ?>">
+  <link rel="stylesheet" href="<?= base_url('css/contact.css') ?>">
 </head>
 
 <body>
@@ -32,7 +37,7 @@ $appName = htmlspecialchars($conf['app_name'] ?? 'Eshop', ENT_QUOTES, 'UTF-8');
       </nav>
       <div class="icons">
         <a class="cart" href="<?= base_url('index.php?page=cart') ?>">🛒 <?= cart_count() ?></a>
-        <span>👤</span>
+        <a class="user-icon" href="<?= base_url('index.php?page=account') ?>" title="account">👤</a>
       </div>
     </div>
   </header>

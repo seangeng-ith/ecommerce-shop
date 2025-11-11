@@ -1,0 +1,129 @@
+.register-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  padding: 40px 20px;
+  background: #f9f9f9;
+}
+
+.register-wrapper {
+  width: 100%;
+  max-width: 600px;
+}
+
+.register-form-container {
+  background: white;
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.register-title {
+  font-size: 32px;
+  color: #999;
+  margin-bottom: 20px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.register-divider {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(to right, #ff6b5b, #ff9a7b);
+  margin: 0 auto 40px;
+  border-radius: 2px;
+}
+
+.register-form {
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.form-label {
+  display: block;
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 12px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.form-input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #999;
+  background: white;
+  transition: all 0.3s ease;
+}
+
+.form-input::placeholder {
+  color: #ccc;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #ff6b5b;
+  box-shadow: 0 0 0 3px rgba(255, 107, 91, 0.1);
+}
+
+.register-btn {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(to right, #ff6b5b, #ff8a75);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: capitalize;
+}
+
+.register-btn:hover {
+  background: linear-gradient(to right, #ff5a47, #ff7a65);
+  box-shadow: 0 4px 12px rgba(255, 107, 91, 0.3);
+}
+
+.register-btn:active {
+  transform: translateY(1px);
+}
+
+.login-link {
+  font-size: 14px;
+  color: #ff6b5b;
+  text-align: center;
+}
+
+.login-link a {
+  color: #ff6b5b;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.login-link a:hover {
+  color: #ff8a75;
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .register-form-container {
+    padding: 40px 20px;
+  }
+
+  .register-title {
+    font-size: 24px;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+}

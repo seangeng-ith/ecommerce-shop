@@ -1,0 +1,283 @@
+.account-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 70vh;
+  padding: 40px 20px;
+  background: #f9f9f9;
+}
+
+.account-wrapper {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.account-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  background: white;
+  padding: 60px 40px;
+}
+
+.account-tab,
+.change-password-container {
+  text-align: center;
+}
+
+.tab-title {
+  font-size: 28px;
+  color: #999;
+  margin-bottom: 20px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.account-divider {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(to right, #ff6b5b, #ff9a7b);
+  margin: 0 auto 40px;
+  border-radius: 2px;
+}
+
+.account-details {
+  text-align: center;
+}
+
+.detail-item {
+  margin-bottom: 30px;
+}
+
+.detail-label {
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 8px;
+  font-weight: 400;
+}
+
+.detail-value {
+  font-size: 16px;
+  color: #333;
+  font-weight: 500;
+}
+
+.account-links {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.account-link {
+  font-size: 14px;
+  color: #ff6b5b;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 10px;
+}
+
+.account-link:hover {
+  color: #ff8a75;
+  text-decoration: underline;
+}
+
+.logout-link {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+/* Your Orders Full Width Section */
+.your-orders-section-full {
+  width: 100%;
+  background: white;
+  padding: 60px 20px;
+  margin-top: 0;
+}
+
+.orders-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.orders-main-title {
+  font-size: 28px;
+  color: #999;
+  margin-bottom: 20px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.orders-main-divider {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(to right, #ff6b5b, #ff9a7b);
+  margin: 0 auto 40px;
+  border-radius: 2px;
+}
+
+.orders-table-wrapper {
+  overflow-x: auto;
+  text-align: left;
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.orders-header {
+  background: linear-gradient(to right, #ff6b5b, #ff8a75);
+  color: white;
+}
+
+.orders-header th {
+  padding: 15px;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.order-row {
+  border-bottom: 1px solid #eee;
+  transition: background 0.3s ease;
+}
+
+.order-row:hover {
+  background: #f9f9f9;
+}
+
+.product-cell,
+.date-cell {
+  padding: 20px 15px;
+  font-size: 14px;
+}
+
+.product-cell {
+  text-align: left;
+}
+
+.product-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.product-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.product-name {
+  color: #666;
+  font-weight: 400;
+}
+
+.date-cell {
+  text-align: right;
+  color: #999;
+}
+
+/* Password Form Styles */
+.password-form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.form-label {
+  display: block;
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 12px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.form-input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #999;
+  background: white;
+  transition: all 0.3s ease;
+}
+
+.form-input::placeholder {
+  color: #ccc;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #ff6b5b;
+  box-shadow: 0 0 0 3px rgba(255, 107, 91, 0.1);
+}
+
+.change-password-btn {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(to right, #ff6b5b, #ff8a75);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: capitalize;
+}
+
+.change-password-btn:hover {
+  background: linear-gradient(to right, #ff5a47, #ff7a65);
+  box-shadow: 0 4px 12px rgba(255, 107, 91, 0.3);
+}
+
+.change-password-btn:active {
+  transform: translateY(1px);
+}
+
+@media (max-width: 768px) {
+  .account-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 40px 20px;
+  }
+  
+  .tab-title {
+    font-size: 24px;
+  }
+  
+  .orders-main-title {
+    font-size: 24px;
+  }
+  
+  .orders-header th {
+    font-size: 12px;
+  }
+  
+  .product-cell,
+  .date-cell {
+    font-size: 12px;
+    padding: 12px 8px;
+  }
+  
+  .product-img {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .your-orders-section-full {
+    padding: 40px 15px;
+  }
+}

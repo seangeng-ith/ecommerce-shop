@@ -4,9 +4,9 @@ namespace App\Controllers;
 
 use App\Core\Controller;
 
-class ContactController extends Controller {
-
+class LoginController extends Controller {
+    
     public function index() {
-        $this->view('contact');
+        $this->view('login');
     }
 }
