@@ -1,0 +1,242 @@
+[
+  {
+    "id": "c1",
+    "name": "Clothes Item 1",
+    "category": "clothes",
+    "price": 183.73,
+    "rating": 5,
+    "image": "clothes-2.jpg",
+    "description": "The details of this product will be displayed shortly.",
+    "gallery": ["clothes-2.jpg", "clothes-3.jpg", "clothes-4.jpg"]
+  },
+  {
+    "id": "c2",
+    "name": "Clothes Item 2",
+    "category": "clothes",
+    "price": 37.23,
+    "rating": 4,
+    "image": "clothes-3.jpg",
+    "description": "The details of this product will be displayed shortly.",
+    "gallery": ["clothes-3.jpg", "clothes-3.jpg", "clothes-4.jpg"]
+  },
+  {
+    "id": "c3",
+    "name": "Clothes Item 3",
+    "category": "clothes",
+    "price": 70.34,
+    "rating": 5,
+    "image": "clothes-4.jpg",
+    "description": "The details of this product will be displayed shortly.",
+    "gallery": ["clothes-4.jpg", "clothes-3.jpg", "clothes-4.jpg"]
+  },
+  {
+    "id": "c4",
+    "name": "Clothes Item 4",
+    "category": "clothes",
+    "price": 176.78,
+    "rating": 5,
+    "image": "clothes-5.jpg",
+    "description": "The details of this product will be displayed shortly.",
+    "gallery": ["clothes-5.jpg", "clothes-3.jpg", "clothes-4.jpg"]
+  },
+  {
+    "id": "c5",
+    "name": "Clothes Item 5",
+    "category": "clothes",
+    "price": 197.93,
+    "rating": 3,
+    "image": "clothes-6.jpg",
+    "description": "The details of this product will be displayed shortly.",
+    "gallery": ["clothes-6.jpg", "clothes-3.jpg", "clothes-4.jpg"]
+  },
+  {
+    "id": "c6",
+    "name": "Clothes Item 6",
+    "category": "clothes",
+    "price": 22.92,
+    "rating": 5,
+    "image": "clothes-1.jpg",
+    "description": "The details of this product will be displayed shortly.",
+    "gallery": ["clothes-1.jpg", "clothes-3.jpg", "clothes-4.jpg"]
+  },
+  {
+    "id": "c7",
+    "name": "Clothes Item 7",
+    "category": "clothes",
+    "price": 192.34,
+    "rating": 3,
+    "image": "clothes-2.jpg",
+    "description": "The details of this product will be displayed shortly.",
+    "gallery": ["clothes-2.jpg", "clothes-3.jpg", "clothes-4.jpg"]
+  },
+  {
+    "id": "c8",
+    "name": "Clothes Item 8",
+    "category": "clothes",
+    "price": 120.93,
+    "rating": 4,
+    "image": "clothes-3.jpg",
+    "description": "The details of this product will be displayed shortly.",
+    "gallery": ["clothes-3.jpg", "clothes-3.jpg", "clothes-4.jpg"]
+  },
+  {
+    "id": "b1",
+    "name": "Bags Item 1",
+    "category": "bags",
+    "price": 97.39,
+    "rating": 5,
+    "image": "bags-2.jpg",
+    "description": "The details of this product will be displayed shortly.",
+    "gallery": ["bags-2.jpg", "bags-3.jpg", "bags-4.jpg"]
+  },
+  {
+    "id": "b2",
+    "name": "Bags Item 2",
+    "category": "bags",
+    "price": 197.88,
+    "rating": 4,
+    "image": "bags-3.jpg",
+    "description": "The details of this product will be displayed shortly.",
+    "gallery": ["bags-3.jpg", "bags-3.jpg", "bags-4.jpg"]
+  },
+  {
+    "id": "b3",
+    "name": "Bags Item 3",
+    "category": "bags",
+    "price": 70.8,
+    "rating": 5,
+    "image": "bags-4.jpg",
+    "description": "The details of this product will be displayed shortly.",
+    "gallery": ["bags-4.jpg", "bags-3.jpg", "bags-4.jpg"]
+  },
+  {
+    "id": "b4",
+    "name": "Bags Item 4",
+    "category": "bags",
+    "price": 167.5,
+    "rating": 4,
+    "image": "bags-5.jpg",
+    "description": "The details of this product will be displayed shortly.",
+    "gallery": ["bags-5.jpg", "bags-3.jpg", "bags-4.jpg"]
+  },
+  {
+    "id": "b5",
+    "name": "Bags Item 5",
+    "category": "bags",
+    "price": 31.36,
+    "rating": 5,
+    "image": "bags-6.jpg",
+    "description": "The details of this product will be displayed shortly.",
+    "gallery": ["bags-6.jpg", "bags-3.jpg", "bags-4.jpg"]
+  },
+  {
+    "id": "b6",
+    "name": "Bags Item 6",
+    "category": "bags",
+    "price": 59.4,
+    "rating": 3,
+    "image": "bags-1.jpg",
+    "description": "The details of this product will be displayed shortly.",
+    "gallery": ["bags-1.jpg", "bags-3.jpg", "bags-4.jpg"]
+  },
+  {
+    "id": "b7",
+    "name": "Bags Item 7",
+    "category": "bags",
+    "price": 125.55,
+    "rating": 5,
+    "image": "bags-2.jpg",
+    "description": "The details of this product will be displayed shortly.",
+    "gallery": ["bags-2.jpg", "bags-3.jpg", "bags-4.jpg"]
+  },
+  {
+    "id": "b8",
+    "name": "Bags Item 8",
+    "category": "bags",
+    "price": 79.84,
+    "rating": 4,
+    "image": "bags-3.jpg",
+    "description": "The details of this product will be displayed shortly.",
+    "gallery": ["bags-3.jpg", "bags-3.jpg", "bags-4.jpg"]
+  },
+  {
+    "id": "s1",
+    "name": "Shoes Item 1",
+    "category": "shoes",
+    "price": 162.43,
+    "rating": 5,
+    "image": "shoes-2.jpg",
+    "description": "The details of this product will be displayed shortly.",
+    "gallery": ["shoes-2.jpg", "shoes-3.jpg", "shoes-4.jpg"]
+  },
+  {
+    "id": "s2",
+    "name": "Shoes Item 2",
+    "category": "shoes",
+    "price": 111.62,
+    "rating": 3,
+    "image": "shoes-3.jpg",
+    "description": "The details of this product will be displayed shortly.",
+    "gallery": ["shoes-3.jpg", "shoes-3.jpg", "shoes-4.jpg"]
+  },
+  {
+    "id": "s3",
+    "name": "Shoes Item 3",
+    "category": "shoes",
+    "price": 131.66,
+    "rating": 5,
+    "image": "shoes-4.jpg",
+    "description": "The details of this product will be displayed shortly.",
+    "gallery": ["shoes-4.jpg", "shoes-3.jpg", "shoes-4.jpg"]
+  },
+  {
+    "id": "s4",
+    "name": "Shoes Item 4",
+    "category": "shoes",
+    "price": 142.58,
+    "rating": 4,
+    "image": "shoes-5.jpg",
+    "description": "The details of this product will be displayed shortly.",
+    "gallery": ["shoes-5.jpg", "shoes-3.jpg", "shoes-4.jpg"]
+  },
+  {
+    "id": "s5",
+    "name": "Shoes Item 5",
+    "category": "shoes",
+    "price": 99.28,
+    "rating": 5,
+    "image": "shoes-6.jpg",
+    "description": "The details of this product will be displayed shortly.",
+    "gallery": ["shoes-6.jpg", "shoes-3.jpg", "shoes-4.jpg"]
+  },
+  {
+    "id": "s6",
+    "name": "Shoes Item 6",
+    "category": "shoes",
+    "price": 134.85,
+    "rating": 4,
+    "image": "shoes-1.jpg",
+    "description": "The details of this product will be displayed shortly.",
+    "gallery": ["shoes-1.jpg", "shoes-3.jpg", "shoes-4.jpg"]
+  },
+  {
+    "id": "s7",
+    "name": "Shoes Item 7",
+    "category": "shoes",
+    "price": 179.65,
+    "rating": 4,
+    "image": "shoes-2.jpg",
+    "description": "The details of this product will be displayed shortly.",
+    "gallery": ["shoes-2.jpg", "shoes-3.jpg", "shoes-4.jpg"]
+  },
+  {
+    "id": "s8",
+    "name": "Shoes Item 8",
+    "category": "shoes",
+    "price": 85.17,
+    "rating": 3,
+    "image": "shoes-3.jpg",
+    "description": "The details of this product will be displayed shortly.",
+    "gallery": ["shoes-3.jpg", "shoes-3.jpg", "shoes-4.jpg"]
+  }
+]

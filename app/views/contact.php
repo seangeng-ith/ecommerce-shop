@@ -1,0 +1,1 @@
+<section class='container pad'><h2>Contact</h2><p>Email us at support@example.com</p></section>

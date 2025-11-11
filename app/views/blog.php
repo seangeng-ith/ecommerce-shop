@@ -1,0 +1,1 @@
+<section class='container pad'><h2>Blog</h2><p>Articles coming soon.</p></section>

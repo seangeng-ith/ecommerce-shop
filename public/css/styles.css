@@ -1,0 +1,135 @@
+/* styles */
+:root{--ink:#273240;--muted:#6b7280;--brand:#ff7b6b;--bg:#fff}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;color:var(--ink);background:var(--bg)}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+
+.container{max-width:1200px;margin:0 auto;padding:0 20px}
+.topbar{position:sticky;top:0;background:#fff;box-shadow:0 1px 8px rgba(0,0,0,.05);z-index:20}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+.brand{font-weight:800;letter-spacing:.2px}
+nav a{margin:0 14px;color:#4a4f58}
+nav a.active{color:#111;font-weight:700}
+.icons{display:flex;gap:14px;color:#4a4f58}
+
+.hero{background:linear-gradient(90deg,#f7dfe0 0%,#f7e6e8 100%)}
+.hero-wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:20px;align-items:center;min-height:520px}
+.hero-copy .eyebrow{letter-spacing:.18em;color:#9aa1ac;margin:0 0 18px}
+.hero-copy h1{font-size:52px;line-height:1.05;margin:0 0 10px;font-weight:700;color:#444}
+.hero-copy h1 span{color:var(--brand);font-weight:800}
+.hero-copy .sub{color:#6b7280;max-width:46ch;margin:0 0 22px}
+.btn{display:inline-block;padding:12px 18px;border-radius:8px;background:#111;color:#fff;border:0;cursor:pointer}
+.btn-dark{background:#111;color:#fff}
+
+.brands{background:#fff;border-top:1px solid #eee;border-bottom:1px solid #eee}
+.brands-row{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;align-items:center;justify-items:center;padding:28px 0}
+.brands-row img{height:40px;filter:grayscale(100%);opacity:.8}
+
+.products{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.card{background:#fff;border:1px solid #eee;border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+.card .media{aspect-ratio:1/1;background:#fafafa;display:block}
+.card .media img{width:100%;height:100%;object-fit:cover}
+.card .info{padding:12px 14px}
+.price{font-weight:800;margin-top:6px}
+.stars{color:#f59e0b}
+.muted{color:#cbd5e1}
+
+.mini .media{aspect-ratio:4/3}
+
+.mid-banner{background:#fff;padding:40px 0}
+.mid-wrap{background:#f9fafb;border:1px solid #eee;border-radius:16px;padding:40px;display:flex;justify-content:center}
+.mid-copy{max-width:700px;text-align:left}
+.mid-copy .eyebrow{letter-spacing:.18em;color:#9aa1ac;margin:0 0 8px}
+.mid-copy h2{font-size:40px;line-height:1.08;margin:0 0 16px;font-weight:800}
+.mid-copy .accent{color:#ef4444}
+
+.footer{padding:30px 0;margin-top:40px;border-top:1px solid #eee;color:#6b7280;text-align:center}
+.footer .pay{display:grid;gap:10px;justify-items:center}
+
+.pad{padding:40px 0}
+.filters{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0 20px}
+.filters input,.filters select{padding:10px;border:1px solid #e5e7eb;border-radius:8px;font:inherit}
+.pagination{display:flex;gap:8px;justify-content:center;margin:24px 0}
+.pagination a{padding:8px 12px;border:1px solid #e5e7eb;border-radius:8px}
+.pagination a.active{background:#111;color:#fff;border-color:#111}
+
+@media (max-width: 1024px){.products{grid-template-columns:repeat(3,1fr)}.hero-wrap{grid-template-columns:1fr}}
+@media (max-width: 700px){.products{grid-template-columns:repeat(2,1fr)}.brands-row{grid-template-columns:repeat(2,1fr)}.hero-copy h1{font-size:40px}}
+@media (max-width: 480px){.products{grid-template-columns:1fr}}
+
+
+/* product detail */
+.product .prod-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:start}
+.product .prod-media .hero{border:1px solid #eee;border-radius:12px;background:#fafafa;aspect-ratio:4/3;object-fit:contain}
+.product .thumbs{display:flex;gap:10px;margin-top:12px;flex-wrap:wrap}
+.product .thumbs img{width:70px;height:70px;border:1px solid #eee;border-radius:8px;object-fit:cover;cursor:pointer}
+.product .crumbs{color:#9aa1ac}
+.product .big-price{font-size:36px;font-weight:900;margin:10px 0 12px}
+.buy-row{display:flex;gap:12px;align-items:center}
+.buy-row input[type=number]{width:80px;padding:10px;border:1px solid #e5e7eb;border-radius:8px;font:inherit}
+
+/* cart */
+.cart-table{width:100%;border-collapse:collapse;margin-top:10px}
+.cart-table th,.cart-table td{border-bottom:1px solid #eee;padding:12px 8px;text-align:left}
+.cart-table thead th{background:#ff7b6b;color:#fff;border-color:#ff7b6b}
+.cart-table .prod-cell{display:flex;gap:12px;align-items:center}
+.cart-table .prod-cell img{width:64px;height:64px;object-fit:cover;border-radius:8px;border:1px solid #eee}
+.cart-table .qty-cell input{width:68px;padding:8px;border:1px solid #e5e7eb;border-radius:8px}
+.cart-table .remove{color:#ef4444;font-size:13px}
+.cart-table .money{font-weight:800;text-align:right}
+.cart-table tfoot .label{text-align:right;font-weight:600}
+.cart-actions{display:flex;gap:12px;justify-content:flex-end;margin-top:14px}
+
+@media (max-width: 900px){
+  .product .prod-grid{grid-template-columns:1fr}
+}
+
+
+/* === Animations & Effects === */
+@keyframes fadeUp { from {opacity:0; transform: translateY(18px);} to {opacity:1; transform: translateY(0);} }
+.reveal { opacity:0; transform: translateY(18px); }
+.reveal.in { opacity:1; transform:none; transition: .6s ease; }
+
+.card{ position:relative; overflow:hidden; transition: transform .18s ease, box-shadow .18s ease; }
+.card:hover{ transform: translateY(-4px); box-shadow: 0 12px 28px rgba(17,24,39,.08); }
+.card .media{ position:relative; overflow:hidden; }
+.card .media img{ transition: transform .3s ease; }
+.card:hover .media img{ transform: scale(1.06); }
+
+/* Hover overlay with buttons */
+.card .overlay{
+  position:absolute; inset:0; display:flex; align-items:center; justify-content:center;
+  background: linear-gradient(180deg, rgba(0,0,0,.0), rgba(0,0,0,.35));
+  opacity:0; pointer-events:none; transition: opacity .2s ease;
+}
+.card:hover .overlay{ opacity:1; pointer-events:auto; }
+.overlay .actions{ display:flex; gap:10px; }
+.btn-soft{
+  background: rgba(255,255,255,.9); color:#111; border-radius:999px; padding:10px 14px; border:0; cursor:pointer;
+  font-weight:700; box-shadow:0 4px 12px rgba(0,0,0,.12); transition: transform .1s ease, box-shadow .2s ease;
+}
+.btn-soft:hover{ transform: translateY(-1px); box-shadow:0 8px 20px rgba(0,0,0,.18); }
+.btn-ghost{
+  background: rgba(17,17,17,.85); color:#fff; border-radius:999px; padding:10px 14px; border:0; cursor:pointer;
+  font-weight:700; box-shadow:0 4px 12px rgba(0,0,0,.2);
+}
+.btn-ghost:hover{ transform: translateY(-1px); }
+
+/* Ripple effect for buttons */
+.ripple { position: relative; overflow: hidden; }
+.ripple::after{
+  content:""; position:absolute; border-radius:50%; transform: scale(0); background: rgba(255,255,255,.6);
+  width: 10px; height: 10px; opacity:0; transition: transform .45s ease, opacity .6s ease;
+  left: var(--x,50%); top: var(--y,50%);
+}
+.ripple.active::after{ transform: scale(20); opacity:1; }
+
+/* Tilt on hover */
+.tilt:hover{ transform: perspective(800px) rotateX(2deg) rotateY(-3deg) translateY(-4px); }
+
+/* Product page micro effects */
+.buy-row .btn-dark{ position:relative; }
+.buy-row .btn-dark::after{ content:""; position:absolute; inset:0; border-radius:8px; box-shadow:0 6px 22px rgba(255,123,107,.35); opacity:0; transition: opacity .2s ease; }
+.buy-row .btn-dark:hover::after{ opacity:1; }
