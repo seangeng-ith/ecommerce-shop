@@ -1,20 +1,18 @@
-# Eshop Pro (PHP)
+# E-commerce Shop (MVC)
+Refactor of the original project into a lightweight PHP MVC while keeping all views and assets.
 
-Includes:
-- Hero header, **brands banner**, **featured products** cards with ratings & BUY action
-- **Mid-season banner**
-- Category sections: Clothes, Bags, Shoes
-- Fully responsive grid
-- **Shop page** with sorting, filtering, pagination (+ simple cart counter)
+## Run locally
+- Point your web server to the `public/` directory.
+- Set `base_url` in `config/config.php` (e.g. `http://localhost/ecommerce-mvc/public`).
 
-## Run
-```bash
-cd public
-php -S localhost:8000
-```
-Open http://localhost:8000
-
-## Configure
-- Change `config/config.php` (app name, base URL)
-- Replace images in `public/img/`
-- Edit styles in `public/css/styles.css`
+## Structure
+app/
+  Core/ (Router, Controller, View, Helpers)
+  Controllers/ (Home, Shop, Product, Cart, Contact, Blog)
+  Models/ (ProductModel, CartModel)
+  Views/ (templates + partials)
+  Data/products.json
+public/
+  index.php, css/, js/, img/
+config/
+  config.php

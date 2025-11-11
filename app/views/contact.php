@@ -1,1 +1,2 @@
+<?php use App\Core\Helpers; if(!function_exists('base_url')){ function base_url($p=''){ return Helpers::base_url($p);} } if(!function_exists('money')){ function money($n){ return Helpers::money((float)$n);} } ?>
 <section class='container pad'><h2>Contact</h2><p>Email us at support@example.com</p></section>

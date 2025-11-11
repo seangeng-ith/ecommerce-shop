@@ -1,3 +1,4 @@
+<?php use App\Core\Helpers; if(!function_exists('base_url')){ function base_url($p=''){ return Helpers::base_url($p);} } if(!function_exists('money')){ function money($n){ return Helpers::money((float)$n);} } ?>
 <?php // home ?>
 <section class="hero">
   <div class="container hero-wrap">
