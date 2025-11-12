@@ -13,17 +13,25 @@
 }
 
 .register-form-container {
-  background: white;
+  background: #ffffff;
   padding: 60px 40px;
   text-align: center;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
 
 .register-title {
   font-size: 32px;
-  color: #999;
-  margin-bottom: 20px;
-  font-weight: 300;
-  letter-spacing: 1px;
+  color: #222;
+  margin-bottom: 8px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.register-subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 24px;
 }
 
 .register-divider {
@@ -54,11 +62,11 @@
 
 .form-input {
   width: 100%;
-  padding: 14px 16px;
+  padding: 14px 42px 14px 16px;
   border: 1px solid #ddd;
   border-radius: 4px;
   font-size: 14px;
-  color: #999;
+  color: #333;
   background: white;
   transition: all 0.3s ease;
 }
@@ -76,24 +84,26 @@
 .register-btn {
   width: 100%;
   padding: 14px;
-  background: linear-gradient(to right, #ff6b5b, #ff8a75);
-  color: white;
+  background: linear-gradient(90deg, #ff6b5b, #ff9a7b);
+  color: #fff;
   border: none;
-  border-radius: 4px;
-  font-size: 14px;
-  font-weight: 500;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s ease;
-  text-transform: capitalize;
+  transition: transform 0.15s ease, box-shadow 0.2s ease;
+  text-transform: none;
+  box-shadow: 0 6px 16px rgba(255, 107, 91, 0.25);
 }
 
 .register-btn:hover {
-  background: linear-gradient(to right, #ff5a47, #ff7a65);
-  box-shadow: 0 4px 12px rgba(255, 107, 91, 0.3);
+  transform: translateY(-1px);
+  box-shadow: 0 10px 20px rgba(255, 107, 91, 0.3);
 }
 
 .register-btn:active {
-  transform: translateY(1px);
+  transform: translateY(0);
+  box-shadow: 0 6px 16px rgba(255, 107, 91, 0.25);
 }
 
 .login-link {
@@ -123,7 +133,41 @@
     font-size: 24px;
   }
 
-  .form-group {
-    margin-bottom: 20px;
-  }
+.form-group {
+  margin-bottom: 20px;
+  position: relative;
 }
+
+.pw-wrap { display: block; position: relative; }
+}
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+}
+.terms-text {
+  font-size: 13px;
+  color: #777;
+}
+.terms-text a { color: #ff6b5b; text-decoration: none; }
+.terms-text a:hover { color: #ff8a75; }
+
+.pw-toggle {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: transparent;
+  color: #999;
+  cursor: pointer;
+  padding: 0;
+}
+.pw-toggle svg { width: 20px; height: 20px; }
+.pw-toggle:hover { color: #666; }

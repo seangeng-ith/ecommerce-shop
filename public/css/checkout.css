@@ -9,12 +9,14 @@
 
 .checkout-wrapper {
   width: 100%;
-  max-width: 1400px;
+  max-width: 700px;
 }
 
 .checkout-container {
-  background: white;
-  padding: 60px 80px;
+  background: #ffffff;
+  padding: 60px 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
 
 .checkout-title {
@@ -85,30 +87,38 @@
 
 .checkout-actions {
   display: flex;
-  justify-content: flex-end;
-  margin-top: 50px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.checkout-total {
+  font-size: 14px;
+  color: #666;
 }
 
 .checkout-btn {
-  padding: 14px 40px;
-  background: linear-gradient(to right, #ff6b5b, #ff8a75);
-  color: white;
+  padding: 14px 24px;
+  background: linear-gradient(90deg, #ff6b5b, #ff9a7b);
+  color: #fff;
   border: none;
-  border-radius: 4px;
-  font-size: 14px;
-  font-weight: 500;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s ease;
-  text-transform: capitalize;
+  transition: transform 0.15s ease, box-shadow 0.2s ease;
+  text-transform: none;
+  box-shadow: 0 6px 16px rgba(255, 107, 91, 0.25);
 }
 
 .checkout-btn:hover {
-  background: linear-gradient(to right, #ff5a47, #ff7a65);
-  box-shadow: 0 4px 12px rgba(255, 107, 91, 0.3);
+  transform: translateY(-1px);
+  box-shadow: 0 10px 20px rgba(255, 107, 91, 0.3);
 }
 
 .checkout-btn:active {
-  transform: translateY(1px);
+  transform: translateY(0);
+  box-shadow: 0 6px 16px rgba(255, 107, 91, 0.25);
 }
 
 @media (max-width: 768px) {
@@ -129,7 +139,7 @@
   .checkout-actions {
     justify-content: center;
   }
-  
+
   .checkout-btn {
     width: 100%;
   }

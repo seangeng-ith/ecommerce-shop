@@ -15,8 +15,7 @@ if (!function_exists('money')) {
   }
 } ?>
 <?php
-$catalog = json_decode(file_get_contents(__DIR__ . '/../data/products.json'), true);
-$items = cart_items($catalog);
+$items = $items ?? [];
 $total = 0;
 foreach ($items as $it) {
   $total += $it['subtotal'];
@@ -62,8 +61,8 @@ foreach ($items as $it) {
         </tfoot>
       </table>
       <div class="cart-actions">
-        <button class="btn" name="update_cart" value="1">Update Cart</button>
-        <a class="btn btn-dark" href="#">Checkout</a>
+        <button class="btn" name="set_qty" value="1">Update Cart</button>
+        <a class="btn btn-dark" href="<?= base_url('index.php?page=checkout') ?>">Checkout</a>
       </div>
     </form>
   <?php endif; ?>

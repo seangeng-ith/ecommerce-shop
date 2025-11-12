@@ -1,9 +1,9 @@
 <?php
 return [
-    'host' => 'localhost',
+    'host' => '127.0.0.1',
     'user' => 'root',
-    'password' => '',
+    'password' => 'root',
     'database' => 'ecommerce_shop',
-    'port' => 3306,
+    'port' => 3309,
     'charset' => 'utf8mb4'
 ];

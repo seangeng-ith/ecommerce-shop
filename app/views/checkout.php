@@ -1,5 +1,5 @@
 
-<?php use App\Core\Helpers; if(!function_exists('base_url')){ function base_url($p=''){ return Helpers::base_url($p);} } ?>
+<?php use App\Core\Helpers; if(!function_exists('base_url')){ function base_url($p=''){ return Helpers::base_url($p);} } if(!function_exists('money')){ function money($n){ return Helpers::money((float)$n);} } ?>
 <?php require_once 'partials/header.php'; ?>
 
 <section class="checkout-section">
@@ -8,6 +8,7 @@
       <h1 class="checkout-title">Check Out</h1>
       <div class="checkout-divider"></div>
       
+      <?php $total = (float)($total ?? 0); ?>
       <form method="POST" class="checkout-form">
         <div class="form-row">
           <div class="form-group">
@@ -39,7 +40,8 @@
         </div>
         
         <div class="checkout-actions">
-          <button type="submit" class="checkout-btn">Checkout</button>
+          <div class="checkout-total">Total amount: <strong><?= money($total) ?></strong></div>
+          <button type="submit" class="checkout-btn">Place Order</button>
         </div>
       </form>
     </div>

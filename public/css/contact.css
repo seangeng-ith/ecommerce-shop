@@ -9,35 +9,34 @@
 
 .contact-wrapper {
   width: 100%;
-  max-width: 800px;
+  max-width: 1000px;
 }
 
 .contact-container {
   background: white;
-  padding: 80px 60px;
-  text-align: center;
+  padding: 48px 36px;
 }
 
 .contact-title {
-  font-size: 32px;
-  color: #999;
-  margin-bottom: 20px;
-  font-weight: 300;
-  letter-spacing: 1px;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 12px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
 }
 
 .contact-divider {
-  width: 60px;
+  width: 56px;
   height: 3px;
   background: linear-gradient(to right, #ff6b5b, #ff9a7b);
-  margin: 0 auto 50px;
+  margin: 0 auto 28px;
   border-radius: 2px;
 }
 
 .contact-info {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 12px;
 }
 
 .contact-item {
@@ -75,9 +74,86 @@
   margin-top: 30px;
 }
 
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.contact-panels, .contact-card, .contact-socials, .social-pill { display: none; }
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-group {}
+
+.form-label {
+  display: block;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 6px;
+}
+
+.form-input,
+.form-textarea,
+.contact-form select {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color .2s ease, box-shadow .2s ease;
+  background: #fff;
+}
+
+.form-input:focus,
+.form-textarea:focus,
+.contact-form select:focus {
+  border-color: #ff6b5b;
+  box-shadow: 0 0 0 3px rgba(255,107,91,.15);
+}
+
+.form-textarea {
+  resize: vertical;
+}
+
+.contact-btn {
+  display: inline-block;
+  padding: 12px 18px;
+  background: linear-gradient(to right, #ff6b5b, #ff9a7b);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+
+.contact-btn:hover {
+  filter: brightness(1.05);
+}
+
+.contact-success {
+  text-align: center;
+}
+
+.contact-errors {
+  margin-bottom: 20px;
+  padding: 12px 16px;
+  background: #fff6f5;
+  border: 1px solid #ffd6d0;
+  color: #b74335;
+  border-radius: 8px;
+}
+
 @media (max-width: 768px) {
   .contact-container {
-    padding: 50px 30px;
+    padding: 36px 24px;
   }
 
   .contact-title {
@@ -85,7 +161,12 @@
   }
 
   .contact-info {
-    gap: 20px;
+    gap: 16px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
   }
 
   .contact-value {

@@ -9,40 +9,45 @@
 
 .account-wrapper {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1000px;
 }
 
 .account-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 60px;
-  background: white;
-  padding: 60px 40px;
+  gap: 30px;
 }
 
 .account-tab,
 .change-password-container {
-  text-align: center;
+  text-align: left;
+}
+
+.account-card {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
 
 .tab-title {
   font-size: 28px;
-  color: #999;
-  margin-bottom: 20px;
-  font-weight: 300;
-  letter-spacing: 1px;
+  color: #222;
+  margin-bottom: 8px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
 .account-divider {
   width: 60px;
   height: 3px;
   background: linear-gradient(to right, #ff6b5b, #ff9a7b);
-  margin: 0 auto 40px;
+  margin: 0 0 30px;
   border-radius: 2px;
 }
 
 .account-details {
-  text-align: center;
+  text-align: left;
 }
 
 .detail-item {
@@ -94,7 +99,7 @@
   width: 100%;
   background: white;
   padding: 60px 20px;
-  margin-top: 0;
+  margin-top: 30px;
 }
 
 .orders-container {
@@ -150,6 +155,64 @@
   background: #f9f9f9;
 }
 
+.order-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.order-meta.centered {
+  justify-content: center;
+  gap: 8px;
+}
+.payment-total { font-size: 16px; color: #666; margin-bottom: 12px; }
+.paypal-wrap { max-width: 480px; margin: 0 auto; }
+.order-meta-left {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  color: #666;
+}
+.order-meta-right { color: #999; }
+
+.orders-btn {
+  display: inline-block;
+  padding: 8px 14px;
+  background: linear-gradient(90deg, #ff6b5b, #ff9a7b);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform .15s ease, box-shadow .2s ease;
+  text-decoration: none;
+  box-shadow: 0 6px 16px rgba(255, 107, 91, 0.25);
+}
+
+.orders-btn:hover { transform: translateY(-1px); box-shadow: 0 10px 20px rgba(255,107,91,.3); }
+.orders-btn:active { transform: translateY(0); box-shadow: 0 6px 16px rgba(255,107,91,.25); }
+
+.status-badge {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+}
+.status-on_hold { background: #ff8a75; }
+.status-paid { background: #28a745; }
+.status-cancelled { background: #6c757d; }
+
+.checkout-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.checkout-total { font-size: 14px; color: #666; }
+
 .product-cell,
 .date-cell {
   padding: 20px 15px;
@@ -192,7 +255,10 @@
 .form-group {
   margin-bottom: 30px;
   text-align: left;
+  position: relative;
 }
+
+.pw-wrap { display: block; position: relative; }
 
 .form-label {
   display: block;
@@ -205,7 +271,7 @@
 
 .form-input {
   width: 100%;
-  padding: 14px 16px;
+  padding: 14px 42px 14px 16px;
   border: 1px solid #ddd;
   border-radius: 4px;
   font-size: 14px;
@@ -223,6 +289,25 @@
   border-color: #ff6b5b;
   box-shadow: 0 0 0 3px rgba(255, 107, 91, 0.1);
 }
+
+.pw-toggle {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: transparent;
+  color: #999;
+  cursor: pointer;
+  padding: 0;
+}
+.pw-toggle svg { width: 20px; height: 20px; }
+.pw-toggle:hover { color: #666; }
 
 .change-password-btn {
   width: 100%;
@@ -250,8 +335,7 @@
 @media (max-width: 768px) {
   .account-container {
     grid-template-columns: 1fr;
-    gap: 40px;
-    padding: 40px 20px;
+    gap: 20px;
   }
   
   .tab-title {

@@ -13,17 +13,25 @@
 }
 
 .login-form-container {
-  background: white;
+  background: #ffffff;
   padding: 60px 40px;
   text-align: center;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
 
 .login-title {
   font-size: 32px;
-  color: #999;
-  margin-bottom: 20px;
-  font-weight: 300;
-  letter-spacing: 1px;
+  color: #222;
+  margin-bottom: 8px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.login-subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 24px;
 }
 
 .login-divider {
@@ -41,7 +49,10 @@
 .form-group {
   margin-bottom: 30px;
   text-align: left;
+  position: relative;
 }
+
+.pw-wrap { display: block; position: relative; }
 
 .form-label {
   display: block;
@@ -54,11 +65,11 @@
 
 .form-input {
   width: 100%;
-  padding: 14px 16px;
+  padding: 14px 42px 14px 16px;
   border: 1px solid #ddd;
   border-radius: 4px;
   font-size: 14px;
-  color: #999;
+  color: #333;
   background: white;
   transition: all 0.3s ease;
 }
@@ -76,25 +87,26 @@
 .login-btn {
   width: 100%;
   padding: 14px;
-  background: white;
-  color: #999;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  font-size: 14px;
-  font-weight: 500;
+  background: linear-gradient(90deg, #ff6b5b, #ff9a7b);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s ease;
-  text-transform: capitalize;
+  transition: transform 0.15s ease, box-shadow 0.2s ease;
+  text-transform: none;
+  box-shadow: 0 6px 16px rgba(255, 107, 91, 0.25);
 }
 
 .login-btn:hover {
-  color: #333;
-  border-color: #ff6b5b;
-  background: #fff9f8;
+  transform: translateY(-1px);
+  box-shadow: 0 10px 20px rgba(255, 107, 91, 0.3);
 }
 
 .login-btn:active {
-  background: #fff5f3;
+  transform: translateY(0);
+  box-shadow: 0 6px 16px rgba(255, 107, 91, 0.25);
 }
 
 .signup-link {
@@ -113,6 +125,44 @@
 .signup-link a:hover {
   color: #ff8a75;
 }
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.forgot-link {
+  font-size: 13px;
+  color: #777;
+}
+.forgot-link a {
+  color: #ff6b5b;
+  text-decoration: none;
+}
+.forgot-link a:hover {
+  color: #ff8a75;
+}
+
+.pw-toggle {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: transparent;
+  color: #999;
+  cursor: pointer;
+  padding: 0;
+}
+.pw-toggle svg { width: 20px; height: 20px; }
+.pw-toggle:hover { color: #666; }
 
 @media (max-width: 480px) {
   .login-form-container {

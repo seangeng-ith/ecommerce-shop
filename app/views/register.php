@@ -8,15 +8,19 @@ if (!function_exists('base_url')) {
         return Helpers::base_url($p);
     }
 } ?>
-<?php require_once 'partials/header.php'; ?>
+ 
 
 <section class="register-section">
     <div class="register-wrapper">
         <div class="register-form-container">
-            <h1 class="register-title">Register</h1>
+            <h1 class="register-title">Create your account</h1>
+            <p class="register-subtitle">Join us to start shopping</p>
             <div class="register-divider"></div>
 
             <form method="POST" class="register-form">
+                <?php $redir = isset($_GET['redirect']) ? (string)$_GET['redirect'] : ''; if ($redir !== ''): ?>
+                <input type="hidden" name="redirect" value="<?= htmlspecialchars($redir, ENT_QUOTES) ?>">
+                <?php endif; ?>
                 <div class="form-group">
                     <label for="name" class="form-label">Name</label>
                     <input type="text" id="name" name="name" class="form-input" placeholder="Name" required>
@@ -37,6 +41,10 @@ if (!function_exists('base_url')) {
                     <input type="password" id="confirm_password" name="confirm_password" class="form-input" placeholder="Confirm Password" required>
                 </div>
 
+                <div class="form-row">
+                    <div class="terms-text">By creating an account, you agree to our <a href="#">Terms</a>.</div>
+                </div>
+
                 <button type="submit" class="register-btn">Register</button>
             </form>
 
@@ -44,5 +52,3 @@ if (!function_exists('base_url')) {
         </div>
     </div>
 </section>
-
-<?php require_once 'partials/footer.php'; ?>
